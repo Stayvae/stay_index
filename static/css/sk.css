@@ -1,0 +1,119 @@
+@media screen and (max-width: 768px) {
+    .skul {
+        width: 300px;
+    }
+  }
+  
+  /* 为宽度小于320px的设备设置背景色 */
+  @media screen and (max-width: 320px) {
+    .skul {
+        width: 300px;
+    }
+  }
+/* .skul, .skli {
+    margin: 15px;
+    padding: 0px;
+} */
+.skul {
+    width: 300px;
+}
+.skli {
+    list-style: none;
+    color: white;
+    font-size: 18px;
+    margin: 35px 0;
+    position: relative;
+}
+.skli::before,.skli::after {
+    content: "";
+    display: block;
+    height: 8px;
+    width: 100%;
+    background-color: rgb(89, 102, 110);
+    position: absolute;
+    bottom: -15px;
+    border-radius: 6px;
+}
+.skli::before {
+    box-shadow: rgba(red, green, blue);
+
+}
+
+.skli::after {
+    background-image: linear-gradient(90deg,#b9c5c9,#a2d6e4);
+    animation-duration: 1.2s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+}
+
+.html::after {
+    animation-name: html;
+}
+.CSS::after {
+    animation-name: CSS;
+}
+.js::after {
+    animation-name: js;
+}
+.net::after {
+    animation-name: net;
+}
+.SQLserver::after {
+    animation-name: MySQL;
+}
+.MySQL::after {
+    animation-name: MySQL;
+}
+@keyframes html {
+    from{
+        width: 0;
+    }
+    to{
+        width: 80%;
+    }
+}
+
+@keyframes CSS {
+    from{
+        width: 0;
+    }
+    to{
+        width: 80%;
+    }
+}
+
+@keyframes js {
+    from{
+        width: 0;
+    }
+    to{
+        width: 55%;
+    }
+}
+
+@keyframes net {
+    from{
+        width: 0;
+    }
+    to{
+        width: 50%;
+    }
+}
+
+@keyframes SQLserver {
+    from{
+        width: 0;
+    }
+    to{
+        width: 80%;
+    }
+}
+
+@keyframes MySQL {
+    from{
+        width: 0;
+    }
+    to{
+        width: 80%;
+    }
+}
